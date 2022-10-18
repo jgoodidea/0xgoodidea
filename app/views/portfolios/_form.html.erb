@@ -1,0 +1,34 @@
+<%= form_with model: @portfolio do |form| %>
+  <div>
+    <%= form.label :title %><br />
+    <%= form.text_field :title %>
+    <% @portfolio.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :image %><br />
+    <%= form.text_field :image %>
+    <% @portfolio.errors.full_messages_for(:image).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :summary %><br />
+    <%= form.text_area :summary %>
+    <% @portfolio.errors.full_messages_for(:summary).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :passwd %><br />
+    <%= form.text_field :passwd %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

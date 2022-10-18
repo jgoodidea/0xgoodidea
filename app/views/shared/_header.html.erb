@@ -1,0 +1,50 @@
+<!-- Navbar Start -->
+<div class="container position-relative header">
+  <nav
+    class="navbar navbar-expand-lg py-2 py-lg-0 px-0 px-lg-5"
+  >
+    <button
+      type="button"
+      class="navbar-toggler btn btn-dark"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-extended="false"
+      aria-label="collapse-header"
+    >
+      Menu
+    </button>
+    <div class="me-auto"></div>
+    <a href="https://calendly.com/jgoodidea/intro" class="d-block d-lg-none" target="_blank">
+      <button class="btn btn-success">
+        Book a free call
+      </button>
+    </a>
+    <div
+      class="collapse navbar-collapse justify-content-between my-2"
+      id="navbarCollapse"
+    >
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link link-secondary <%=is_active('home')%>" href="<%= home_path %>">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary <%=is_active('skills')%>" href="<%= skills_path %>">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary <%=is_active('portfolios')%>" href="<%= portfolios_path %>">Portfolios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary <%=is_active('contact')%>" href="<%= contact_path %>">Contact</a>
+        </li>
+      </ul>
+      <div class="me-auto"></div>
+      <a href="https://calendly.com/jgoodidea/intro" class="d-none d-lg-block" target="_blank">
+        <button class="btn btn-success">
+          Book a free call
+        </button>
+      </a>
+    </div>
+  </nav>
+</div>
+<!-- Navbar End -->

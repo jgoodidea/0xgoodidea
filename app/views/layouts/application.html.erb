@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JGoodIdea | Software Engineer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="JGoodIdea | Software Engineer. This page is build by using Ruby on Rails" />
+    <meta name="keywords" content="portfolio, ruby, rails, good, idea">
+
+    <meta property="og:title" content="JGoodIdea | Software Engineer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jgoodidea.herokuapp.com" />
+    <meta property="og:description" content="JGoodIdea | Software Engineer. This page is build by using Ruby on Rails" />
+    <meta name="twitter:creator" content="@jGoodIdea">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <%= render 'shared/header' %>
+      <%= yield %>
+      <div class="push"></div>
+    </div>
+    <%= render 'shared/footer' %>
+  </body>
+</html>

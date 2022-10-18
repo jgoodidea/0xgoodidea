@@ -1,0 +1,107 @@
+$body-bg: rgba(255, 255, 255, 0);
+$body-color: #555;
+
+$primary: #aa5284;
+
+html {
+	background: url('bg/bg_pink.jpg') center 62px #472432;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+body {
+	background: url('bg/gradient_internal.png') repeat-x;
+	min-height: 100%;
+}
+
+section {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	background: url('bg/top_logo.jpg') top center no-repeat;
+	margin-bottom: -70px;
+}
+
+.header {
+	min-height: 140px;
+}
+
+.footer {
+	border-top: 2px solid #111;
+	background: url('bg/bg_dk_noise.png');
+	min-height: 70px;
+}
+
+.push {
+	min-height: 70px;
+}
+
+.services {
+	background: url('bg/bg_dark_verticals.png');
+}
+
+ol {
+	list-style-type: disc;
+}
+
+.nav-link.active {
+	color: $primary;
+}
+
+// animation text
+
+.stream-effect .text {
+	letter-spacing: 5px;
+	fill: none;
+	stroke-width: 3;
+	stroke-linejoin: round;
+	stroke-dasharray: 70 330;
+	stroke-dashoffset: 0;
+	-webkit-animation: stroke 6s infinite linear;
+	animation: stroke 6s infinite linear;
+}
+.stream-effect .text:nth-child(5n + 1) {
+	stroke: #F2385A;
+	-webkit-animation-delay: -1.2s;
+	animation-delay: -1.2s;
+}
+.stream-effect .text:nth-child(5n + 2) {
+	stroke: #F5A503;
+	-webkit-animation-delay: -2.4s;
+	animation-delay: -2.4s;
+}
+.stream-effect .text:nth-child(5n + 3) {
+	stroke: #89fa00;
+	-webkit-animation-delay: -3.6s;
+	animation-delay: -3.6s;
+}
+.stream-effect .text:nth-child(5n + 4) {
+	stroke: #56D9CD;
+	-webkit-animation-delay: -4.8s;
+	animation-delay: -4.8s;
+}
+.stream-effect .text:nth-child(5n + 5) {
+	stroke: #3AA1BF;
+	-webkit-animation-delay: -6s;
+	animation-delay: -6s;
+}
+@-webkit-keyframes stroke {
+	100% {
+		stroke-dashoffset: -400;
+	}
+}
+@keyframes stroke {
+	100% {
+		stroke-dashoffset: -400;
+	}
+}
+.stream-effect {
+  z-index: 13;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+<div class="portfolio">
+  <div class="container p-3 mx-auto my-auto text-start">
+    <div class="row">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center">
+        <img src="<%= image_path(@portfolio.image) %>" width="100%" alt="Service image">
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">
+        <h4>
+          <%= @portfolio.title %>
+        </h4>
+        <p>
+          <%= @portfolio.summary %>
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li><%= link_to "Edit", edit_portfolio_path(@portfolio) %></li>
+          <li><%= link_to "Destroy", portfolio_path(@portfolio), data: {
+            turbo_method: :delete,
+            turbo_confirm: "Are you sure to destroy this portfolio?"
+          } %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

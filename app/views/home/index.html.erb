@@ -1,0 +1,77 @@
+<div class="container p-3 mx-auto my-auto text-center">
+  <div class="summary text-white">
+    <h1 style="font-size: 5rem;">James Gao</h1>
+    <p class="lead">Software Engineer | Web | Mobile | Blockchain</p>
+  </div>
+</div>
+<section class="aboutme">
+  <div class="container">
+    <div class="p-2 my-4 shadow-lg">
+      <div class="card p-2">
+        <div class="row p-4">
+          <div class="col-md-6 col-sm-12">
+            <h4>Summary</h4>
+            <p>
+              Creative and results-oriented Full Stack Software Engineer with a focus on the design and implementation of backend side. Skilled in agile processes, backend and frontend development, and creating financial dApp on blockchain. Lover of everything related to generate innovation and new knowledge. Problem solver who faces them with a smile and solves them as quickly as possible. I am interested in winter sports such as snowboarding.
+            </p>
+            <ol>
+              <li>Worked with Software Development Life Cycle(SDLC)</li>
+              <li>Skilled in agile processes, back-end and front-end development, and creating financial dApp on blockchain</li>
+              <li>Familiar with blockchain concepts and know how to implement</li>
+              <li>Expertise in Angular, React, Javascript, Node JS and UI with Responsive Designs / Solidity, Contract, Truffle & Hardhat and Web3</li>
+            </ol>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h4>Basic Information</h4>
+            <div class="row py-2">
+              <div class="col">
+                DATE OF BIRTH :
+              </div>
+              <div class="col">
+                February 11, 1995
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col">
+                EMAIL :
+              </div>
+              <div class="col">
+                gloproman0211@gmail.com
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col">
+                TIME ZONE :
+              </div>
+              <div class="col">
+                Flexible
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col">
+                LANGUAGE :
+              </div>
+              <div class="col">
+                English
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services py-4">
+  <div class="container text-center">
+    <h1 class="text-white">Services</h1>
+    <div class="row g-2 py-4">
+      <% @services.each do |service| %>
+        <div class="col-md-4 col-xs-12">
+          <img src="<%= image_path(service.image) %>" alt="service" height="150px" />
+          <h2 class="text-white"><%= service.title %></h2>
+          <p><%= service.summary %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
